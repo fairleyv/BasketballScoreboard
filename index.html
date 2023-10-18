@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Basketball Scoreboard</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Basketball Scoreboard</h1>
+            <div class="teams">
+                <h3 class="home">Home</h3>
+                <h3 class="away">Away</h3>
+            </div> 
+            <div class='scores'>
+                    <h4 id='homeScore'>0</h4>
+                    <div class="reset">
+                        <button class='resetButton' onclick="reset()">NEW GAME</button>
+                    </div> <!-- /reset -->
+                    <h4 id='awayScore'>0</h4>
+            </div>
+            <div class="buttons">
+                <div class="homeButtons">
+                    <button class='scoreButton' onclick="add1PointHome()">+1</button>
+                    <button class='scoreButton' onclick="add2PointsHome()">+2</button>
+                    <button class='scoreButton' onclick="add3PointsHome()">+3</button>
+                </div><!-- /homeButtons-->
+                <div class="awayButtons">
+                    <button class='scoreButton' onclick="add1PointAway()">+1</button>
+                    <button class='scoreButton' onclick="add2PointsAway()">+2</button>
+                    <button class='scoreButton' onclick="add3PointsAway()">+3</button>
+                </div> <!--/awayButtons -->
+            </div> <!--/buttons  -->
+        </div> <!--/container  -->
+    </body>
+</html>
+
+
